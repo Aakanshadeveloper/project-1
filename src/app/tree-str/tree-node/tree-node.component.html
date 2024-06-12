@@ -1,0 +1,9 @@
+<div>
+  <span>{{node?.name}}</span>
+  <button (click)="onAddChild()">Add Child</button>
+  <ul *ngIf="node?.children?.length">
+    <li *ngFor="let child of node?.children">
+      <app-tree-node [node]="child" (addChild)="addChilds($event)"></app-tree-node>
+    </li>
+  </ul>
+</div>

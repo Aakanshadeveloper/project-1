@@ -1,0 +1,5 @@
+<div>
+  <h2>Infinite Tree</h2>
+  <app-tree-node [node]="rootNode" (addChild)="addChild($event)"></app-tree-node>
+  <button (click)="addRootNode()">Add Root Node</button>
+</div>
